@@ -76,5 +76,28 @@ Destination Address | Source Address | DATA
 CC-CC-CC-CC-CC-CC | AA-AA-AA-AA-AA-AA | Encapsulated data
 封裝不只封裝MAC資訊，還會封裝其他資訊。
 
+Switch (交換機)
+外觀跟Hub類似
+設備外面會標示，這台設備是Hub or Switch
+Cisco 2960 Switch Layer 2
+Cisco 3560 Switch Layer 3
+Switch 外面有很多個port，可以連接電腦或是其他的設備。
+任意兩個port，都是獨立的Bus。
+當A,B,C電腦同時傳送資料，資料不會產生碰撞問題。
+
+Switch是利用MAC Table傳送資料，每個port都會有編號。
+MAC1,MAC2...MAC3
+port1,port2...port8
+情況一 : 假設Host1傳送資料到Host3，Host3的MAC位址會接到Host1的前面。
+
+情況二 : 當Host1傳送資料到Host8，但Host8還未分配MAC Table位址這時會產生Floading。
+Flooding:每個port都會送一個資料，這時的運作方式就會跟Hub相同。
+每台電腦收到資料後，會檢查上面的MAC位址跟自己的有沒有一樣，一樣就接收，不一樣就丟棄。
+
+
+
+
+
+
 
 
