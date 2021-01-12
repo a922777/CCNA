@@ -40,6 +40,7 @@ Problem of Hub
 當有兩台電腦同時傳送資料時，就會產生碰撞問題。
 碰撞再一起的資料稱為垃圾訊息(garbled message)，
 垃圾訊息還是會傳送到其他的電腦上。
+
 COLLISION DOMAIN(碰撞區域)
 會產生碰撞的區域
 
@@ -94,6 +95,24 @@ port1,port2...port8
 Flooding:每個port都會送一個資料，這時的運作方式就會跟Hub相同。
 每台電腦收到資料後，會檢查上面的MAC位址跟自己的有沒有一樣，一樣就接收，不一樣就丟棄。
 
+Switch forwarding methods
+Store-and-forward
+先儲存，再傳送
+假設Switch接了兩台電腦A,B
+傳送時會先檢查(check)資料，再進行傳送，較謹慎，但效能比較低。
+Cut-through
+直接傳送資料，效能較好，但不會檢查傳送時資料有沒有發生錯誤。
+
+Broadcast message(廣播訊息)
+目的MAC:FF:...:FF 稱為廣播訊息
+目的IP:255.255.255.255
+廣播訊息特性:
+假設Host1要發送一個廣播訊息給所有機器，它的目的MAC都會是FF，
+當switch收到廣播訊息的時候，它無條件會將廣播訊息，傳送給其他電腦，
+這時所有的電腦都會接收這個廣播訊息 (Hi H1!)。
+
+Broadcast Domain(廣播區域)
+廣播區域:廣播訊息可以到達的地方
 
 
 
