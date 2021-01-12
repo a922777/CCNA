@@ -1,0 +1,65 @@
+CCNA考試科目編號640-802
+ICND1 (Interconnecting Cisco Networking Devices)
+CCENT考1的內容
+ICND2 實作
+
+CCNA可以分2次考
+CCENT考ICND1的內容 加考 ICND2 實作
+
+HOST (主機)
+用來跟網路設備連線(可以設定IP的都可以稱為主機)
+例如；PC，Network Printer
+
+Network Device (網路設備)
+Router，Switch，Hub
+
+Network Media (網路媒介)
+不同地方需要不同的網路媒介
+光纖，無線網路
+
+Hub (集線器)
+Ethernet 乙太網路
+上面的孔稱為 port
+RJ45 網路接口
+
+Share Bus(匯流排)
+是一種共享資料傳輸的通道
+
+Addressing (定址)
+MAC:48bit 24bit+24bit，vebdor code+流水號
+在網路卡上
+
+Send message in Hub
+Source (發送方)
+Destination (接收方)
+當傳一筆資料，每台電腦都會收到，再根據MAC位址，
+刪除資料，傳到對應的電腦上。
+
+Problem of Hub
+會產生碰撞(clooide)問題，
+當有兩台電腦同時傳送資料時，就會產生碰撞問題。
+碰撞再一起的資料稱為垃圾訊息(garbled message)，
+垃圾訊息還是會傳送到其他的電腦上。
+COLLISION DOMAIN(碰撞區域)
+會產生碰撞的區域
+
+Ethernet (CSMA/CD)
+解決碰撞的方法有哪些?
+碰撞會影響傳輸的效能，乙太網路會減少碰撞的次數，
+進而提升效能
+	1. CSMA (Carrier Sense Multiple Access)
+	每台電腦上都有一個雷達(比喻)，偵測網路卡上，有沒有電腦在傳送資料，
+	假設電腦A正在傳送資料，B也要，這時B就不能傳送，就可以避免碰撞的問題。
+	多重存取 (Multiple Access)
+	只要是在Share Bus上的電腦都可以傳送資料
+	listen before transmit
+	一開始先檢查Share Bus上有沒有電腦在傳送資料
+
+	2. CD (Collision Detection)
+	假設A，B電腦同時傳送資料，碰撞已經無法避免，CD會讓碰撞提前發生
+	，第三者會發送一個JAM的訊息，把兩個資料提前清除掉，就可以縮短碰撞的時間。
+	產生一個back of time，下一次要傳送的等待時間，時間是隨機的(Random)。
+	A要傳送的時間，跟B要傳送的時間是不一樣的，下次要傳送的時間是分開的。
+
+
+
