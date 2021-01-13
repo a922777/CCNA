@@ -47,7 +47,7 @@ COLLISION DOMAIN(碰撞區域)
 Ethernet (CSMA/CD)
 解決碰撞的方法有哪些?
 碰撞會影響傳輸的效能，乙太網路會減少碰撞的次數，進而提升效能。
-	1. CSMA (Carrier Sense Multiple Access)
+	1. CSMA (Carrier Sense Multiple Access)防止碰撞機制
 	每台電腦上都有一個雷達(比喻)，偵測網路卡上，有沒有電腦在傳送資料，
 	假設電腦A正在傳送資料，B也要，這時B就不能傳送，就可以避免碰撞的問題。
 	多重存取 (Multiple Access)
@@ -55,7 +55,7 @@ Ethernet (CSMA/CD)
 	listen before transmitting 
 	一開始先檢查Share Bus上有沒有電腦在傳送資料
 
-	2. CD (Collision Detection)
+	2. CD (Collision Detection)偵測碰撞機制
 	假設A，B電腦同時傳送資料，碰撞已經無法避免，CD會讓碰撞提前發生
 	，第三者會發送一個JAM的訊息，把兩個資料提前清除掉，等待一段時間再傳送，就可以縮短碰撞的時間。
 	back of time，下一次要傳送的等待時間，時間是隨機的(Random)。
