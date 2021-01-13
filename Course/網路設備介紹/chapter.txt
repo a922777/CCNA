@@ -114,6 +114,8 @@ Broadcast message(廣播訊息)
 Broadcast Domain(廣播區域)
 廣播區域:廣播訊息可以到達的地方
 
+2021/01/12
+
 
 
 

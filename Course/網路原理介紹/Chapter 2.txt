@@ -1,0 +1,102 @@
+Router(路由器)
+路由器的port很少
+主要是接其他網路設備(Switch,Hub,Router)
+也是可以直接連接電腦，但浪費資源。
+Router功能:
+	1.阻擋廣播封包，廣播訊息
+	2.分析網路區域(Network Segment)
+	3.繞送(Routing) #一個繞送區域 = 一個廣播區域
+
+Logical Address 或稱為IP Address(Internet Protocal)
+EX:192.168.200.0，之後的主機IP位址就會是192.168.200.1 ,...,192.168.200.9
+
+查看電腦IP
+cmd -> ipconfig
+
+查看電腦MAC
+cmd -> ipconfig /all
+
+IP目前有兩種版本IPV4,IPV6
+IPV4:32bits(0~255)[8+8+8+8]
+
+MAC and IP
+MAC = Layer2 Address (稱為Switch)
+#也有L3的Switch,可以處理IP功能，L2的Switch只能處理MAC資訊
+IP = Layer3 Address (稱為Router)
+
+當電腦傳送資料主要是靠MAC在傳送，IP只是輔助而已。
+IP:指目前在哪一個網路區域
+MAC:指資料要傳送到哪
+
+ARP (Address Resolution Protocal)
+IP -> MAC (侷限在同一個網路區域)
+	1.傳送一個廣播訊息。
+	2.當接收方收到廣播訊息之後，會先比對IP，是不是自己的位址。
+	3.如果是正確的位址，會回傳MAC給發送方。
+ARP -> 儲存在cache -> IP -> MAC
+CMD -> arp -a  #查看對方MAC位址
+#每一台電腦IP位址都是可以改變的，MAC位址是不可變的。
+CMD -> arp -d #如果發生IP跟MAC互相衝突，必須先清除cache
+
+Function of Router (Routing Message 繞送)
+一個Router連接的線，代表一個網路區域
+
+Routing Table
+port | 區域編號
+fa0/0|10.0.0.0
+fa0/1|172.16.0.0
+fa0/2|192.168.1.0
+
+廣播封包
+Destination	L2 Addr(MAC,48bits):FF:FF...:FF
+Destination	L3 Addr(IP,32bits):255.255.255.255
+
+Default Gateway (預設閘道)
+#一個網路區域，對內及對外的代表
+
+Tables maintained by Routers
+ARP Table
+Routing Table
+
+LAN (區域網路)
+管理者可以控制的網路區域
+
+Add Hosts in Network
+
+Planning and Cabling Network
+雙絞線:
+一般可分為兩種，兩種線皆有各自的特點。
+	1. 無遮蔽式雙絞線(Unshielded Twisted Pair, UTP)
+	#沒有金屬遮蔽, 構造較簡單:十字分隔板(未必每種都有)、白棉線(用來切割塑膠外皮)
+	絕緣材料、絞線
+	#多一層金屬遮蔽,可以避免一些外來的電磁干擾，價格較貴
+	距離較遠的電腦通常是使用主幹線
+	網路設備直接接電腦通常使用UDP
+	2. 遮蔽式雙絞線(Shielded Twisted Pair, STP)
+	#多一層金屬遮蔽,可以避免一些外來的電磁干擾，價格較貴
+	距離較遠的電腦通常是使用主幹線(STP)
+
+Straight-Through Connection (直線)
+Hub->PC 
+Switch->Router 
+Switch->PC 
+
+Crossover Connection (跳線)
+Hub->Switch
+Router->Router
+C:跳線
+S:直線
+		hub | switch | router | pc
+hub		 C	|	C    |	 S	  |  S
+switch	 C	|	C	 |	 S	  |  S
+router	 S	|	S	 |	 C	  |  C
+pc	 	 S	|	S	 |	 C	  |  C
+
+2021/01/13
+
+
+
+
+
+
+
