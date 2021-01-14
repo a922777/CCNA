@@ -97,5 +97,7 @@ TCP/IP Model
 1. Physical+data link (ARPANET/SATNET/Packet radio/LAN)
 1為Networks
 
+2021/01/15
+
 				
 
