@@ -95,10 +95,10 @@
 	C:跳線
 	S:直線
 ## 
-			hub | switch | router | pc
-	hub		 C	|	C    |	 S	  |  S
-	switch	 C	|	C	 |	 S	  |  S
-	router	 S	|	S	 |	 C	  |  C
+			hub 	|     switch 	 |    router 	  | pc
+	hub		 C	|	C    	 |	 S	  |  S
+	switch		 C	|	C	 |	 S	  |  S
+	router	 	 S	|	S	 |	 C	  |  C
 	pc	 	 S	|	S	 |	 C	  |  C
 
 2021/01/13
