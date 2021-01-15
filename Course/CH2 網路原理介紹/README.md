@@ -92,9 +92,8 @@
 ## Crossover Connection (跳線)
 	Hub->Switch
 	Router->Router
-	C:跳線
-	S:直線
-## 
+
+##  C:跳線 S:直線
 			hub 	|     switch 	 |    router 	  | pc
 	hub		 C	|	C    	 |	 S	  |  S
 	switch		 C	|	C	 |	 S	  |  S
