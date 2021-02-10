@@ -47,7 +47,7 @@ URL(Uniform Resource Locator)
 星狀拓樸(Star Topology)  
 連接到一個共同設備稱為集線器(Hub/Concentrator)
 ```
-![Star Topology](./STAR.png)  
+![Star Topology](./Star.png)  
    
 
 
