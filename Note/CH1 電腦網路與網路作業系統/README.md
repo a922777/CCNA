@@ -38,11 +38,16 @@ URL(Uniform Resource Locator)
 發送器(Transmitter)  
 接收器(Receiver)  
 連接RG11 A/U同軸電纜(Coaxial Cable)  
-10Base5乙太網路
+10Base5乙太網路使用具有AUI(Attachment Unit Interface)接頭的網路介面卡 ，建設成本偏高
+改良版10Base2乙太網路使用具有BNC(Bayonet Neill Concelman)接頭的網路介面卡  
 ```
 ![Bus Topology](./BUS.png)  
-匯流排拓樸示意圖
 
+```
+星狀拓樸(Star Topology)  
+連接到一個共同設備稱為集線器(Hub/Concentrator)
+```
+![Star Topology](./STAR.png)  
    
 
 
