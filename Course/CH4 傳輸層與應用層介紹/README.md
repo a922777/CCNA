@@ -49,7 +49,7 @@
 				<-- DHCP Acknowledge
 	
 	DHCP Offer:Host IP,SubnetMask,Gateway,Dns
-	<img src="./CH4 傳輸層與應用層介紹/pic1.png" style="zoom:70%" />
+	
 
 
 

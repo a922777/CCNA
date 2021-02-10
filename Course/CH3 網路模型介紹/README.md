@@ -14,9 +14,14 @@
 	6	Presentation (表現層)
 	#資料結構定義
 	#資料加密,壓縮,與轉換服務
+	#轉碼的過程
+	
 	5 	Session (交談層)
 	#管理，溝通
 	#對話控制
+	#下載
+	#10M
+	#限速5M
 
 	7,6,5 都是在應用層處理
 
@@ -29,7 +34,7 @@
 	#資料繞送
 
 	2	Data Link (資料鏈結層)
-	#Address (定址)
+	#Address (定址) MAC地址
 	#訊框
 
 	1	Physical (實體層)
@@ -97,13 +102,15 @@
 	2. Data Link		  Layers        Network
 	1. Physical							 Access
 
+主流網路、防火牆(1~4層)
+SD-WAN(5~7層)
 ## TCP/IP Model 
 	4. Application (TELNET/FTP/SMTP/DNS)
 	3. Transport (TCP/UDP)						
 	2. Network (IP)
 	2~4為Protocols
 	1. Physical+data link (ARPANET/SATNET/Packet radio/LAN)
-	1為Networks
+	1 為Networks
 
 2021/01/15
 
