@@ -33,7 +33,7 @@ URL(Uniform Resource Locator)
 區域網路拓樸(LAN　Topology)  
 匯流排拓樸(Bus Topology)  
 又稱為線性匯流排(Linear Bus) 
-![Bus Topology](./Bus.jpg)
+![Bus Topology](./Bus.png)
 ```
    
 
