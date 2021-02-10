@@ -64,7 +64,7 @@ FDDI採用的基本網路架構，就是環狀拓樸，採用雙環結構，一�
 ```  
 ![Ring Topology](./Ring.png)  
 ![Token Topology](./Token.png)
-   
+![FDDI Topology](./FDDI.png 
 
 
 
