@@ -34,7 +34,7 @@ URL(Uniform Resource Locator)
 匯流排拓樸(Bus Topology)  
 又稱為線性匯流排(Linear Bus) 
 ```
-![Bus Topology](./Bus.png)
+![Bus Topology](./BUS.png)
    
 
 
