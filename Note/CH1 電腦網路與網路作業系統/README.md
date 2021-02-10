@@ -63,8 +63,10 @@ Token Ring網路是使用還狀拓樸的架構
 FDDI採用的基本網路架構，就是環狀拓樸，採用雙環結構，一環稱為主環另一環稱為次環，方便一環負責傳遞訊息，另一環負責接收訊息
 ```  
 ![Ring Topology](./Ring.png)  
-![Token Topology](./Token.png)
-![FDDI Topology](./FDDI.png 
+![Token Topology](./Token.png)  
+![FDDI Topology](./FDDI.png)  
+
+
 
 
 
