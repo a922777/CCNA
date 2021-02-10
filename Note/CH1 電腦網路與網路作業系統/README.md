@@ -56,8 +56,14 @@ URL(Uniform Resource Locator)
 ```
 環狀拓樸(Ring Topology)
 所有電腦或網路設備全部連結成一個環狀的方式
+Token Ring網路是使用還狀拓樸的架構
+光纖分散數據介面(Fiber Distributed Data Interface, DFFI)
+國家標準局(American National Standards Insititute, ANSI)
+國際標準組織(International Organization for Standardization, ISO)
+FDDI採用的基本網路架構，就是環狀拓樸，採用雙環結構，一環稱為主環另一環稱為次環，方便一環負責傳遞訊息，另一環負責接收訊息
 ```  
-![Ring Topology](./Ring.png)
+![Ring Topology](./Ring.png)  
+![Token Topology](./Token.png)
    
 
 
