@@ -32,9 +32,17 @@ URL(Uniform Resource Locator)
 ```
 區域網路拓樸(LAN　Topology)  
 匯流排拓樸(Bus Topology)  
-又稱為線性匯流排(Linear Bus) 
+又稱為線性匯流排(Linear Bus)  
+兩端分別為50歐姆  
+終極電阻(Terminator)   
+發送器(Transmitter)  
+接收器(Receiver)  
+連接RG11 A/U同軸電纜(Coaxial Cable)  
+10Base5乙太網路
 ```
-![Bus Topology](./BUS.png)
+![Bus Topology](./BUS.png)  
+匯流排拓樸示意圖
+
    
 
 
