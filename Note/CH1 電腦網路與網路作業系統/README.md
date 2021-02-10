@@ -46,8 +46,18 @@ URL(Uniform Resource Locator)
 ```
 星狀拓樸(Star Topology)  
 連接到一個共同設備稱為集線器(Hub/Concentrator)
+大部分企業的區域網路(LAN)所採用的主要架構之一
+廣泛使用在10Base-T、100Base-TX、1000Base-T
+網路傳輸速度分別為10、100、1000Mbit/s(百萬位元/每秒)
+連接頭(Connector)都是八個腳位(8 pins)，稱之為RJ45。使用電纜線則是由四對的雙絞線所組成。
 ```
-![Star Topology](./Star.png)  
+![Star Topology](./Star.png)
+
+```
+環狀拓樸(Ring Topology)
+所有電腦或網路設備全部連結成一個環狀的方式
+```  
+![Ring Topology](./Ring.png)
    
 
 
